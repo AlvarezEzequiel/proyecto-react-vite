@@ -1,0 +1,77 @@
+
+
+/*Aside*/
+.contenedor_aside{
+    max-height: 120px;
+    border: 1px solid black;
+    display: flex;
+    overflow: auto;
+    padding: 1px;
+    margin-top: 1%;
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+.contenedor_aside .caja{
+    width: 30%;
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 2px;
+}
+.caja{
+    position: relative;
+}
+
+
+
+/*Scrollbar*/
+.contenedor_aside::-webkit-scrollbar{
+    width: 1vw;
+    height: 1.5vh;
+}    
+.contenedor_aside::-webkit-scrollbar-thumb{
+    background-color: #4447;
+    border-radius: 5px;
+    border-bottom: 2.5px solid #ddd;
+}
+/*hover para q brille cuando paso el mouse*/
+.contenedor_aside::-webkit-scrollbar-thumb:hover{
+    background-color: #444;
+}
+.contenedor_aside::-webkit-scrollbar-track{
+    background-color: #ddd7;
+    border-radius: 5px;
+}
+/*el hover en el tracck no se nota mucho aca por el borde bottom 
+del thumb q hace parecer la barra sobre el aire(si cambio a red se ve)*/
+.contenedor_aside::-webkit-scrollbar-track:hover{
+    background-color: #ddd;
+}
+
+/*Animacion srcollbar con img*/
+@keyframes show {
+    from {
+        opacity: .8;
+        scale: 90%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+.caja img {
+    view-timeline-name: --image;
+    view-timeline-axis: inline;
+
+    animation-timeline: --image;
+    animation-name: show;
+}
+
+.imgBebidaAside{
+    width: 100%;
+    height: 110px;
+    
+}

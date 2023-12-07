@@ -1,0 +1,136 @@
+
+
+.contenedor__Grid{
+    position: relative;
+    display: grid;
+    /*place-items: center;*/
+    
+    column-gap: .5rem;
+    row-gap: .5rem;
+    grid-template-areas:
+    "birra picada pizza"
+    "birra drinks drinks"
+    "burguer drinks drinks"
+    "burguer drinks drinks"
+    "postre postre postre"
+    "aside aside aside";
+    grid-template-columns: 45% 25% 30%; 
+    grid-template-rows:15% 10% 10% 10% 20%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right: 1.3rem;
+    margin-bottom: -15rem;
+}
+
+.boxCerveza{
+    display: flex;
+    grid-area: birra;
+    position: relative;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+.boxCerveza h3{
+    position: absolute;
+    color: rgba(22, 22, 22, 0.838);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.imgCervezaMain{
+    width: 100%;
+    max-width: 100%;
+    
+}
+
+.boxBurguer{
+    display: flex;
+    grid-area: burguer;
+    position: relative;
+}
+.boxBurguer h3{
+    position: absolute;
+    color: rgba(107, 107, 107, 0.827);
+    padding-top: 25%;
+    padding-left: 5%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.imgBurguerMain{
+    width: 100%;
+    max-width: 100%;
+}
+
+.boxPizza{
+    display: flex;
+    grid-area: pizza;
+    position: relative;
+    justify-content: center;
+}
+.boxPizza h3{
+    position: absolute;
+    color: rgba(15, 15, 15, 0.838);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.imgPizzaMain{
+    width: 100%;
+    max-width: 100%;
+}
+
+.boxPicada{
+    display: flex;
+    grid-area: picada;
+    position: relative;
+    justify-content: center;
+}
+.boxPicada h3{
+    position: absolute;
+    color: rgba(122, 121, 121, 0.838);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.imgPicadaMain{
+    width: 100%;
+    max-width: 100%;
+}
+
+.boxDrinks{
+    display: flex;
+    grid-area: drinks;
+    position: relative;
+    justify-content: center;
+}
+.boxDrinks h3{
+    position: absolute;
+    color: rgba(107, 107, 107, 0.827);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.imgDrinksMain{
+    width: 100%; 
+    max-width: 100%;
+}
+
+.boxPostres{
+    display: flex;
+    grid-area: postre;
+    position: relative;
+    align-items:center;/*Mueve el h3 arriba/abajo*/
+    overflow: hidden;
+}
+.boxPostres h3{
+    position: absolute;
+    padding-left: 5vw;
+    align-content:center;
+    color: rgba(22, 22, 22, 0.838);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.imgPostreMain{
+    width: 100%;
+    max-width: 100%;
+    
+}
+.contenedor_aside{
+    grid-area: aside;
+}

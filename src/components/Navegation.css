@@ -1,0 +1,47 @@
+.header{
+    background-image: url(../assets/img/headerImg.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    padding: 1.3rem 10%;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    background-color: transparent;
+}
+.navbar ul{
+    display: block;
+    width: 100%;
+}
+.logo{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: overline;
+    font-weight: 700;
+}
+.navbar ul li{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+@media (max-width:660px){
+    .navbar ul li{
+        display: block;
+        padding-top: 1.3rem;
+    }
+}
+
+
